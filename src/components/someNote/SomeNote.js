@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
-import data from '../../sharedData/data.json';
 import { Link } from 'react-router-dom';
 import recordObj from '../../sharedData/recordObj'
 export default class SomeNote extends Component {
 
+    
     render() {
+        const items = this.props.searchItems;
+        
+        const trueItems = items.forEach( (element,i) => {
+            if (!element) delete items[i];
+        });
+
         return (
             <div class="note-template">
                 <ul className="some-template">
-                    {data.map(item => (
+                    {items.map(item => (
                         <li key={item.id}>
                             <Link onClick={() => {
                                 recordObj.name = item.name;
