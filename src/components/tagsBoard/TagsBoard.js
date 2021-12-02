@@ -6,8 +6,7 @@ export default class tagsBoard extends Component {
 
   render() {
     const tags = this.props.byTags;
-    
-    
+
     if(tags) { 
     return (
         <div  className="tags-list">

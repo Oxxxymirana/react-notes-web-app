@@ -19,7 +19,12 @@ export default class SomeNote extends Component {
         items.map((item, i) => { 
             const even = (element) => tags.includes(element);
             if (item.hashtag.some(even)) {
-                newItemList.push(item);
+                newItemList.push( {
+                    name: item.name,
+                    hashtag :item.hashtag,
+                    text : item.text,
+                    id : i,
+                });
             }
         })
 
@@ -54,6 +59,7 @@ export default class SomeNote extends Component {
             );
         } else {
             const correctList = this.getListByTag ();
+            
             return (
             <div class="note-template">
                 <ul className="some-template">
