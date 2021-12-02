@@ -165,3 +165,71 @@ ul li:nth-child(3n) a{
 
   z-index:5;
 }
+
+.tags-search  input, .tags-search button { 
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  border:0;
+}
+
+.tags-search button {
+  cursor: pointer;
+  background: #ffc;
+  font-weight: 500;
+}
+
+.tags-list { 
+  margin-left: 15px;
+}
+
+.tags-list h2 { 
+  margin: 10px 0;
+}
+
+.some-note-template { 
+  background: #ffc;
+  color:#333;
+  padding: 2%;
+  border-radius:5px;
+}
+
+.some-note-template h1 { 
+  margin: 10px 0;
+}
+
+.some-note-template a { 
+ text-decoration: none;
+ color:#333;
+  
+}
+.some-note-template button { 
+  padding: 5px;
+  margin-top: 30px;
+}
+.note-hashtags { 
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.note-text { 
+  margin-top: 10px;
+}
+
+.addbutton a { 
+  color:#333;
+  text-decoration: none;
+}
+
+.new-note input { 
+  height: 20px;
+  padding: 5px;
+}
+
+.new-note button {
+  margin-top: 30px;
+}
+
+.new-note h2 { 
+  margin-top: 10px;
+}
